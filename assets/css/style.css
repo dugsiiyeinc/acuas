@@ -74,7 +74,7 @@ img {
   padding-block: 2rem;
 }
 
-.white {
+.bg-white {
   background-color: white;
   border-radius: 0.625rem;
   padding: 2rem;
@@ -94,6 +94,11 @@ img {
 }
 
 /* Habeenta grid-ka 3 cols-ka */
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 
 /* Habeenta grid-ka 4 cols-ka */
 .grid-4-cols {
@@ -211,6 +216,7 @@ a.read-more:hover {
 }
 
 .btn {
+  font-weight: bold;
   background-color: var(--secondary-color);
   color: white;
   padding: 16px 40px;
@@ -222,4 +228,113 @@ a.read-more:hover {
 
 .btn:hover {
   background-color: var(--primary-color);
+}
+
+/* Habeenta Fact Counter-ka */
+.bg-image {
+  background: linear-gradient(rgba(25, 64, 154, 0.9)),
+    url("../img/fact-bg.jpg") center / cover no-repeat;
+  margin-block: 5rem;
+  height: 75vh;
+}
+
+.flex.col h4,
+.txt-white {
+  color: white;
+}
+
+.sub-header.txt-white {
+  font-size: 2rem;
+}
+
+.sub-header.txt-white span {
+  font-size: 3.5rem;
+  font-weight: 100;
+  vertical-align: middle;
+}
+
+/* Habeenta Our Services-ka */
+.size h1 {
+  font-size: 5.5rem;
+}
+
+.flex.row.shadow a:hover {
+  color: black;
+}
+
+.flex.row.shadow p:hover {
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0px 0px 0.3125rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;
+}
+
+.flex.row.shadow:hover {
+  background-color: var(--primary-color);
+}
+
+.flex.row.shadow .icon:hover {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.service-img img {
+  height: 100vh;
+  margin-block: 1rem;
+}
+
+/* Products */
+.flex.col.border {
+  border: 0.5px solid var(--font-gray-color);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.bg-color.pad {
+  padding-inline: 7.5rem;
+  width: 135%;
+}
+
+.bg-color.pad .bg-font {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.bg-font {
+  color: var(--primary-color);
+}
+
+/* Tablets: 2 columns */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bg-image {
+    height: 150vh;
+  }
+}
+
+/* Smartphones: 1 column */
+@media only screen and (max-width: 640px) {
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  /* Facts */
+  .bg-image {
+    height: 225vh;
+  }
+
+  /* Products */
+  .flex.col.border {
+    margin: auto;
+  }
 }
