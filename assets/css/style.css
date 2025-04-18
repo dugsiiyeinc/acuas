@@ -1,9 +1,3 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-/* Import Font Awesome */
-@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
-
 /* Colors waaye */
 :root {
   --primary-color: #00d1f9;
@@ -54,8 +48,9 @@ p {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
   border-radius: 0 0 8px 8px;
 }
@@ -79,6 +74,7 @@ img {
   border-radius: 0.625rem;
   padding: 2rem;
 }
+
 /* Habeenta grid-ka 1 cols-ka */
 .grid-1-col {
   display: grid;
@@ -86,25 +82,11 @@ img {
   gap: 1rem;
 }
 
-/* Habeenta grid-ka 2 cols-ka */
-.grid-2-cols {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-}
-
-/* Habeenta grid-ka 3 cols-ka */
-.grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-/* Habeenta grid-ka 4 cols-ka */
+.grid-2-cols,
+.grid-3-cols,
 .grid-4-cols {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 /* Habeenta Flex-ka */
@@ -178,8 +160,8 @@ a.read-more:hover {
 
 /* Habeenta About Us */
 .about-img img {
-  height: 128vh;
   margin-left: 1rem;
+  /* width: 100%; */
 }
 
 .about-img {
@@ -187,9 +169,6 @@ a.read-more:hover {
   border-top: 5px solid var(--secondary-color);
   border-left: 10px solid var(--secondary-color);
   border-radius: 8px;
-  overflow: hidden;
-  width: fit-content;
-  max-width: 100%;
 }
 
 .about-exp {
@@ -232,10 +211,14 @@ a.read-more:hover {
 
 /* Habeenta Fact Counter-ka */
 .bg-image {
-  background: linear-gradient(rgba(25, 64, 154, 0.9)),
-    url("../img/fact-bg.jpg") center / cover no-repeat;
-  margin-block: 5rem;
-  height: 75vh;
+  background: linear-gradient(rgba(25, 64, 154, 0.9), rgba(25, 64, 154, 0.9)),
+    url("../img/fact-bg.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+  margin-block: 2rem;
+  padding-block: 2rem;
 }
 
 .flex.col h4,
@@ -267,7 +250,7 @@ a.read-more:hover {
 }
 
 .shadow {
-  box-shadow: 0px 0px 0.3125rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0.3125rem rgba(0, 0, 0, 0.2);
   border-radius: 0.625rem;
 }
 
@@ -281,25 +264,19 @@ a.read-more:hover {
   border-radius: 50%;
 }
 
-.service-img img {
-  height: 100vh;
-  margin-block: 1rem;
-}
-
-/* Products */
+/* Habeenta Products */
 .flex.col.border {
   border: 0.5px solid var(--font-gray-color);
   border-radius: 10px;
-  overflow: hidden;
-  max-width: 400px;
 }
 
-.bg-color.pad {
-  padding-inline: 7.5rem;
-  width: 135%;
+.bg-color.wid-109 {
+  width: 109.5%;
 }
 
-.bg-color.pad .bg-font {
+.bg-color.wid-109 .bg-font {
+  display: flex;
+  flex-direction: column;
   font-size: 1.5rem;
   padding-top: 1rem;
 }
@@ -308,33 +285,153 @@ a.read-more:hover {
   color: var(--primary-color);
 }
 
-/* Tablets: 2 columns */
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
+.btn.pro {
+  display: inline-block;
+  width: 50%;
+}
+
+/* Habeenta Blogs-ka */
+.blog-img-container {
+  position: relative;
+  width: 110%;
+  height: 30vh;
+  max-height: 250px;
+}
+
+/* Habeenta Calendar icon-ka */
+.icon.blog {
+  width: 50%;
+  height: 3rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.bg-color.wid-110 {
+  width: 110%;
+}
+
+.add-gap {
+  gap: 2rem;
+}
+
+/* Habeenta Mobile-da yar yar (Extra Small: Portrait) */
+/* ==== Base Grid Layouts ==== */
+.grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-2-cols,
+.grid-3-cols,
+.grid-4-cols {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ==== Habeenta Responive-ka Portrait Phones-ka yar yar  ==== */
+@media only screen and (max-width: 480px) {
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Fact Counter */
+  .bg-image {
+    height: calc(100% - 4%);
+    margin-block: 2%;
+    padding-block: 2%;
+  }
+
+  /* Habeenta Products */
+  .bg-color.wid-109 {
+    width: 105.5%;
+  }
+}
+
+/* ==== Habeenta Responive-ka Phones-ka iyo Tablets-ka yar yar ==== */
+@media only screen and (max-width: 768px) {
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Fact Counter */
+  .bg-image {
+    height: calc(100% - 4%);
+    margin-block: 2%;
+    padding-block: 2%;
+  }
+
+  /* Habeenta Products */
+  .bg-color.wid-109 {
+    width: 105.5%;
+  }
+}
+
+/* ==== Habeenta Responive-ka Tablets iyo Laptops-ka yar yar  ==== */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid-3-cols,
   .grid-4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .bg-image {
-    height: 150vh;
+  /* Dhexda Geey Hadii hal grid soo hara */
+  .grid-3-cols > *:nth-last-child(1):nth-child(odd),
+  .grid-4-cols > *:nth-last-child(1):nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 60%;
+  }
+
+  /* Habeenta Products */
+  .bg-color.wid-109 {
+    width: 105.5%;
   }
 }
 
-/* Smartphones: 1 column */
-@media only screen and (max-width: 640px) {
-  .grid-2-cols,
-  .grid-3-cols,
+/* ==== Habeenta Responive-ka Desktop-ka ==== */
+@media only screen and (min-width: 1025px) {
+  .grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .grid-4-cols {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ==== Habeenta Responive-ka Shaashadaha waa wayn ==== */
+@media only screen and (min-width: 1441px) {
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
   }
 
-  /* Facts */
-  .bg-image {
-    height: 225vh;
-  }
-
-  /* Products */
-  .flex.col.border {
-    margin: auto;
+  .grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
   }
 }
