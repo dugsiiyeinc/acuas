@@ -6,7 +6,7 @@ This is a collaborative web project hosted on GitHub titled **Acuas**, focused o
 
 **Eng. Honest**
 
-**📅 Date:** Wednesday, April 17, 2025
+**📅 Date:** Wednesday, April 18, 2025
 
 ## 📁 Project Structure
 
@@ -29,6 +29,7 @@ Five pages have been added:
 3. **Fact Counter Page**: Displays dynamic statistics and key figures related to water consumption, customer reach, gallons saved, and project milestones. This page may include animated counters and infographics to make data engaging and informative.
 4. **Service Page**: Outlines all the services offered by Acuas. These might include water delivery, maintenance of purification systems, water testing, or consultation for communities and businesses. Each service is usually detailed with icons, descriptions, and visuals.
 5. **Products Page**: Showcases the range of products provided by Acuas — such as water bottles, purification kits, smart hydration gadgets, and eco-friendly filters. Each product includes a picture, name, short description, and possibly price or feature highlights.
+5. **Blog Page** features informative and engaging articles related to water health, hydration tips, environmental awareness, purification technologies, and updates from the Acuas team. It serves as a platform to educate users and share industry news, while also enhancing SEO and building community trust.
 
 ## 🚀 Technologies Used
 
