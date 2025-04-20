@@ -47,12 +47,12 @@ p {
   color: var(--font-gray-color);
 }
 
-img {
+img,
+iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 0 0 8px 8px;
 }
 
 /* Habeenta container-ka guud */
@@ -65,7 +65,8 @@ img {
 /* Habeenta BG-ga */
 .bg-color {
   background-color: var(--bg-color);
-  border-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
   padding-block: 2rem;
 }
 
@@ -139,6 +140,15 @@ img {
   padding: 3rem;
 }
 
+.icon.blue {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  background: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+}
+
 .sub-header {
   font-size: 1.3rem;
   font-weight: bold;
@@ -161,7 +171,6 @@ a.read-more:hover {
 /* Habeenta About Us */
 .about-img img {
   margin-left: 1rem;
-  /* width: 100%; */
 }
 
 .about-img {
@@ -236,17 +245,9 @@ a.read-more:hover {
   vertical-align: middle;
 }
 
-/* Habeenta Our Services-ka */
+/* Habeenta Services-ka */
 .size h1 {
   font-size: 5.5rem;
-}
-
-.flex.row.shadow a:hover {
-  color: black;
-}
-
-.flex.row.shadow p:hover {
-  color: white;
 }
 
 .shadow {
@@ -258,7 +259,15 @@ a.read-more:hover {
   background-color: var(--primary-color);
 }
 
-.flex.row.shadow .icon:hover {
+.flex.row.shadow:hover a {
+  color: black;
+}
+
+.flex.row.shadow:hover p {
+  color: white;
+}
+
+.flex.row.shadow:hover .icon {
   background-color: var(--bg-color);
   color: var(--primary-color);
   border-radius: 50%;
@@ -291,10 +300,19 @@ a.read-more:hover {
 }
 
 /* Habeenta Blogs-ka */
+.flex.col.shadow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.flex.col.shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .blog-img-container {
   position: relative;
   width: 110%;
-  height: 30vh;
+  height: 50vh;
   max-height: 250px;
 }
 
@@ -315,6 +333,7 @@ a.read-more:hover {
 }
 
 .bg-color.wid-110 {
+  margin-top: -1.5rem;
   width: 110%;
 }
 
@@ -322,8 +341,108 @@ a.read-more:hover {
   gap: 2rem;
 }
 
+/* Habeenta Teams-ka */
+.border.pad-10 {
+  padding: 10%;
+}
+
+.bg-color.wid-100 {
+  margin-top: -1.5rem;
+  width: 100%;
+}
+
+.bg-color .sub-header.txt-black {
+  color: #000;
+}
+
+.relative {
+  position: relative;
+}
+
+.share-icon-wrapper {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+}
+
+.team-icon {
+  position: absolute;
+  top: 50%;
+  left: -2.25rem;
+  display: flex;
+  gap: 5px;
+  padding: 0.625rem;
+  background-color: rgba(0, 136, 204, 0.95);
+  transform: translateY(-50%);
+  border-top-right-radius: 3.125rem;
+  border-bottom-right-radius: 3.125rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.share-icon-wrapper:hover .team-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-icon a {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.icon.blue.hover:hover {
+  background-color: var(--primary-color);
+}
+
+/* Habeenta Contact Us-ka */
+.size {
+  font-size: 1rem;
+}
+
+.bg-white.input {
+  padding: 0.5rem;
+}
+
+.bg-white.input input,
+.bg-white.input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.bg-white.input textarea {
+  padding-bottom: 10rem;
+}
+
+.btn.full-width {
+  width: 100%;
+  border: none;
+}
+
+.bg-white.pad-half {
+  padding: 0.5rem;
+}
+
+#map {
+  height: 68%;
+}
+
+/* Habeenta Page Not Fonud */
+.icon.not-found {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-size: 5rem;
+}
+
+.font-not-found p {
+  font-size: 1.5rem;
+}
+
+/* === RESPONSIVE === */
 /* Habeenta Mobile-da yar yar (Extra Small: Portrait) */
-/* ==== Base Grid Layouts ==== */
 .grid-1-col {
   display: grid;
   grid-template-columns: 1fr;
@@ -335,6 +454,23 @@ a.read-more:hover {
 .grid-4-cols {
   display: grid;
   gap: 1.5rem;
+}
+
+/* Habeenta Contacts-ka */
+.bg-white.input {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.btn.full-width {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+#address,
+#mail,
+#tel {
+  width: 100%;
 }
 
 /* ==== Habeenta Responive-ka Portrait Phones-ka yar yar  ==== */
@@ -358,6 +494,25 @@ a.read-more:hover {
   .bg-color.wid-109 {
     width: 105.5%;
   }
+
+  /* Habeenta Contacts-ka */
+  #contact {
+    padding-bottom: 50%;
+  }
+
+  .bg-white.input {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .btn.full-width {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  #contact-2 {
+    width: 100%;
+    height: 150%;
+  }
 }
 
 /* ==== Habeenta Responive-ka Phones-ka iyo Tablets-ka yar yar ==== */
@@ -380,6 +535,16 @@ a.read-more:hover {
   /* Habeenta Products */
   .bg-color.wid-109 {
     width: 105.5%;
+  }
+
+  /* Habeenta Contacts */
+  #contact {
+    padding-bottom: 50%;
+  }
+
+  #contact-2 {
+    width: 100%;
+    height: 150%;
   }
 }
 
