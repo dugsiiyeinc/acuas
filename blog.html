@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
 
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon" />
+
     <!-- Icons link -->
     <link
       rel="stylesheet"
@@ -26,6 +29,72 @@
   </head>
 
   <body>
+    <!-- Header -->
+    <header id="navbar" class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-hand-holding-water"></i> Acuas
+        </a>
+        <!-- Tabs -->
+        <nav class="nav-tabs-wrap">
+          <ul class="nav-tabs" id="navTabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                >Pages <i class="fa fa-angle-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="feature.html">Our Feature</a></li>
+                <li><a href="fact-counter.html">Fact Counter</a></li>
+                <li><a href="product.html">Our Product</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="404.html">404 Page</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Get Free Delivery -->
+        <div class="nav-info">
+          <span>Get Free Delivery</span>
+          <span class="phone">Free: +252615600765</span>
+        </div>
+
+        <!-- Bar + Search + Order -->
+        <div class="nav-actions">
+          <div class="bar">
+            <span>|</span>
+          </div>
+          <button class="search-btn" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="nav-btn primary">Order Now</button>
+        </div>
+        <!-- Mobile Toggle -->
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="overlay hero-section">
+      <img src="assets/img/breadcrumb.jpg" alt="Image 1" />
+
+      <div class="hero-content">
+        <h1>Our Blogs</h1>
+        <p>
+          Home <span>/</span> <span>Page</span> <span>/</span>
+          <span class="txt-primary">Blogs</span>
+        </p>
+      </div>
+    </section>
+
     <!-- Blog Start -->
     <section id="blog">
       <div class="container">
@@ -129,5 +198,176 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-2-cols">
+          <!-- Grid Part 2  -->
+          <div>
+            <form class="footer-signup">
+              <input type="text" placeholder="Email address to Subscribe" />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Grid Part 2  -->
+          <div class="footer-socials flex row">
+            <a
+              class="icon blue hover"
+              href="https://www.facebook.com/injineermaxameddaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.x.com/injineerdaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.instagram.com/injineer.daacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.linkedin.com/in/injineerdaacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on linkedin"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <br />
+        <div class="grid-4-cols add-gap">
+          <div class="footer-col">
+            <div>
+              <h3>
+                <i class="fas fa-hand-holding-water txt-primary"></i>
+                <span class="sub-header txt-white">Acuas</span>
+              </h3>
+            </div>
+
+            <div>
+              <p>
+                Dolor amet sit justo amet elitr <br />
+                clita ipsum elitr est.Lorem <br />
+                ipsum dolor sit amet, <br />
+                consectetur adipiscing elit<br />
+                consectetur adipiscing elit.
+              </p>
+              <form class="footer-signup">
+                <input type="text" placeholder="Enter your email" />
+                <button type="submit" class="btn">SignUp</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-col free-6">
+            <h4 class="sub-header txt-white">About Us</h4>
+            <ul>
+              <li><a href="#">Why Choose Us</a></li>
+              <li><a href="#">Free Water Bottles</a></li>
+              <li><a href="#">Water Dispensers</a></li>
+              <li><a href="#">Bottled Water Coolers</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="sub-header txt-white">Business Hours</h4>
+            <p>
+              <span>Mon - Friday:</span><br /><b class="txt-white"
+                >09.00 am to 07.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Saturday:</span><br /><b class="txt-white"
+                >10.00 am to 05.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Vacation:</span><br /><b class="txt-white"
+                >All Sunday is our vacation</b
+              >
+            </p>
+          </div>
+          <div class="footer-col">
+            <div><h4 class="sub-header txt-white">Contact Info</h4></div>
+            <div>
+              <ul>
+                <li>
+                  <a>
+                    <i class="fa fa-map-marker-alt"></i> 123 Street, New York,
+                    USA
+                  </a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> info@example.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> info@example.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-phone"></i> +012 345 67890</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-print"></i> +012 345 67890</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="copyright-content">
+        <span>
+          <i class="fa fa-copyright"></i>
+          <a
+            href="https://wa.me/252615600765"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with Eng. Honest on WhatsApp"
+            >Eng. Honest</a
+          >
+          <span>& </span>
+          <a
+            href="https://wa.me/60187679327"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with Eng. Yuwazac on WhatsApp"
+          >
+            Eng. Yuwazac</a
+          >, All right reserved.
+        </span>
+        <span>
+          Designed By <a href="https://htmlcodex.com">HTML Codex</a> Distributed
+          By <a href="https://themewagon.com">ThemeWagon</a>
+        </span>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="back-to-top"
+      onclick="scrollToTop()"
+      aria-label="Back to top of page"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

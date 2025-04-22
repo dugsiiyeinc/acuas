@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="author" content="Engineer Honest" />
     <meta name="description" content="Acuas - Drinking Water Website" />
-    <title>Acuas - About Us</title>
+    <title>Acuas - Testimonial Page</title>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -40,10 +40,10 @@
         <nav class="nav-tabs-wrap">
           <ul class="nav-tabs" id="navTabs">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="service.html">Service</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle"
                 >Pages <i class="fa fa-angle-down"></i
               ></a>
@@ -87,86 +87,48 @@
       <img src="assets/img/breadcrumb.jpg" alt="Image 1" />
 
       <div class="hero-content">
-        <h1>About Us</h1>
+        <h1>Testimonial Page</h1>
         <p>
           Home <span>/</span> <span>Page</span> <span>/</span>
-          <span class="txt-primary">About</span>
+          <span class="txt-primary">Testimonial</span>
         </p>
       </div>
     </section>
 
-    <!-- About Start -->
-    <div class="container">
-      <div class="grid-2-cols">
-        <!-- About Image -->
-        <div class="about-img">
-          <img src="assets/img/about.jpg" alt="About Image" />
-          <div class="about-exp"><span>20 Years Experiance</span></div>
+    <!-- Testimonial -->
+    <section class="bg-color">
+      <div class="container">
+        <div class="header size">
+          <h4>Testimonials</h4>
+          <h1>Our Clients Reviews</h1>
         </div>
 
-        <!-- About Text -->
-        <div class="flex col add-gap">
-          <div class="header">
-            <h4>About Us</h4>
-            <h1>We Deliver The Quality Water.</h1>
+        <div class="testimonial-carousel">
+          <div class="testimonial-controls">
+            <button
+              class="testimonial-btn"
+              id="prevTestimonial"
+              aria-label="Previous"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="testimonial-btn"
+              id="nextTestimonial"
+              aria-label="Next"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
 
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
-              quidem quas totam nostrum! Maxime rerum voluptatem sed, facilis
-              unde a aperiam nulla voluptatibus excepturi ipsam iusto
-              consequuntur
-            </p>
+          <!-- Slides group -->
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slides are injected by JS -->
           </div>
-
-          <!-- Grid 1 -->
-          <div class="grid-1-col">
-            <!-- Item 1 -->
-            <div class="bg-color">
-              <div class="flex row">
-                <div class="icon move">
-                  <i class="fas fa-tint fa-2x"></i>
-                </div>
-
-                <div class="flex col">
-                  <div>
-                    <a href="#" class="sub-header">Satisfied Customer</a>
-                  </div>
-                  <div>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Quas provident maiores quisquam.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="bg-color">
-              <div class="flex row">
-                <div class="icon">
-                  <i class="fas fa-faucet fa-2x"></i>
-                </div>
-                <div class="flex col">
-                  <div><a href="#" class="sub-header">Standard Product</a></div>
-                  <div>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Quas provident maiores quisquam.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Read More Button -->
-          <a href="#" class="btn">Read More</a>
+          <div class="testimonial-indicators" id="testimonialIndicators"></div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer Start -->
     <footer class="footer">
