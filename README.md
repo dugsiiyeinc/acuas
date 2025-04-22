@@ -5,6 +5,7 @@ This is a collaborative web project hosted on GitHub titled **Acuas**, focused o
 ## 👤 Contributor
 
 **Eng. Honest**
+
 **Eng. Yuwazac**
 
 **📅 Date:** Wednesday, April 22, 2025
@@ -50,6 +51,8 @@ Pages have been added:
 - Goole Fonts
 - JavaScript (ES6+)
 - Git & GitHub (for version control and collaboration)
+
+**Previous link**: https://acuas.vercel.app/
 
 ## 🤝 Collaboration Note
 
