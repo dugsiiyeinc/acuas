@@ -1,201 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acuas</title>
-    <!-- google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Acuas - Drinking Water Website" />
+    <title>Acuas - Home Page</title>
 
-    <!-- icon fonts  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <!-- navbar and Hero start here -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <div class="container-fluid position-relative" >
-            <nav class="navbar navbar-expand navbar-light sticky-navbar">
-                <a href="#" class="navbar-brand">
-                    <h1 class="text-primary" id="brand-h1"><i class="fa-solid fa-hand-holding-droplet"></i>Acuas</h1>
-                    <!-- image-logo -->
-                </a>
-                <div class="collapse navbar-collapse" id="navbarcollapse">
-                    <div class="menu-navbar">
-                        <a href="#" class="nav-item nav-link" id="home">home</a>
-                        <a href="#" class="nav-item nav-link">about</a>
-                        <a href="#" class="nav-item nav-link">service</a>
-                        <a href="#" class="nav-item nav-link">blog</a>
-                        <a href="#" class="nav-item nav-link">contact</a>
-                    </div>
-                        <div class="delivery-number">
-                            <div class="delivery-flex border-end">
-                                <span class="text-body">Get Free Delivery</span>
-                                <a href="tel:+4733378901">
-                                    <span class="text-primary">Free: + 0123 456 7890</span>
-                                </a>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary btn-md-square" id="searchmodal"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <a href="" class="btn btn-primary flex-shrink" id="order-now">Order Now</a>
-                </div>
-            </nav>
-
-            <!-- corousel start -->
-
-            <div class="carousel-header">
-               <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li> 
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img src="./carousel-2.jpg" class="img-fluid w-100" alt="image">
-                            <div class="carousel-captiop-2">
-                                <div class="carousel-caption-2-content">
-                                    <h4 data-animation="fadeInleft" data-delay="1s" id="important-life">Importance life</h4>
-                                    <h1 class="h1-text" data-animation="fadeInleft" data-delay="1.3s" id="h1-safe-water">Always Want Safe Water For Healthy Life</h1>
-                                    <p class="mb-5" data-animation="fadeInleft" data-delay="1.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                                        <div class="carousel-caption-1-content-btn" data-animation="fadeInright" data-delay="1.7s">
-                                            <a class="btn  bnt-primary flex-shrink" id="hero-button1" href="#">Order Now</a>
-                                            <a class="btn btn-secondary flex-shrink" id="hero-button2" href="#">Free Estimate</a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="carousel-item active">
-                            <img src="./carousel-2.jpg" class="img-fluid w-100" alt="image">
-                            <div class="carousel-captiop-2">
-                                <div class="carousel-caption-2-content">
-                                    <h4 data-animation="fadeInleft" data-delay="1s">Importance life</h4>
-                                    <h1 data-animation="fadeInleft" data-delay="1.3s">Always Want Safe Water For Healthy Life</h1>
-                                    <p class="mb-5" data-animation="fadeInleft" data-delay="1.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                                        <div class="carousel-caption-1-content-btn" data-animation="fadeInright" data-delay="1.7s">
-                                            <a class="btn bnt-primary flex-shrink" href="#">Order Now</a>
-                                            <a class="btn btn-secondary flex-shrink" href="#">Free Estimate</a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                    </div>
-               </div>
-            </div>
-           
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="navbar" class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-hand-holding-water"></i> Acuas
+        </a>
+        <!-- Tabs -->
+        <nav class="nav-tabs-wrap">
+          <ul class="nav-tabs" id="navTabs">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                >Pages <i class="fa fa-angle-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="feature.html">Our Feature</a></li>
+                <li><a href="fact-counter.html">Fact Counter</a></li>
+                <li><a href="product.html">Our Product</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="404.html">404 Page</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Get Free Delivery -->
+        <div class="nav-info">
+          <span>Get Free Delivery</span>
+          <span class="phone">Free: +252615600765</span>
         </div>
 
-
-
-            <!-- testimonial start  -->
-
-            
-
-
-
-
-<!--  footer start  -->
-  
-<footer>
-
-<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-    <div class="container py-5" id="p5-1">
-        <div class="row footer-icons g-5 mb-5 align-items-center" id="icons1">
-            <div class="col-lg-7">
-                <div class="position-relative mx-auto">
-                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
-                    <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-end" id="social">
-                    <a class="btn social btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f" id="fa-facebook-f"></i></a>
-                    <a class="btn social btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn social btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn social btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+        <!-- Bar + Search + Order -->
+        <div class="nav-actions">
+          <div class="bar">
+            <span>|</span>
+          </div>
+          <button class="search-btn" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="nav-btn primary">Order Now</button>
         </div>
-        <div class="footer-grid row g-5">
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="footer-item d-flex flex-column">
-                    <div class="footer-item">
-                        <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>Acuas</h3>
-                        <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="position-relative">
-                        <input class=" sign-up rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                        <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-icons col-md-6 col-lg-6 col-xl-3">
-                <div class="footer-item d-flex flex-column">
-                    <h4 class="text-white Us mb-4" >About Us</h4>
-                    <a href="#" class="href-link"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
-                    <a href="#"class="href-link"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
-                    <a href="#"class="href-link"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
-                    <a href="#"class="href-link"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
-                    <a href="#"class="href-link"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                    <a href="#"class="href-link"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="footer-item d-flex flex-column">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <div class="mb-3">
-                        <h6 class="text-muted h6 mb-0">Mon - Friday:</h6>
-                        <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                    </div>
-                    <div class="mb-3">
-                        <h6 class="text-muted mb-0">Saturday:</h6>
-                        <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                    </div>
-                    <div class="mb-3">
-                        <h6 class="text-muted mb-0">Vacation:</h6>
-                        <p class="text-white mb-0">All Sunday is our vacation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="footer-item d-flex flex-column">
-                    <h4 class="text-white mb-4">Contact Info</h4>
-                    <a href="#" class="href-link"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                    <a href="mailto:info@example.com"class="href-link"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                    <a href="mailto:info@example.com" class="href-link"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                    <a href="tel:+012 345 67890" class="href-link"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                    <a href="tel:+012 345 67890" class="mb-3" class="href-link"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                </div>
-            </div>
+        <!-- Mobile Toggle -->
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
         </div>
-     </div>
+      </div>
+    </header>
+
+    <!-- Hero (Carousel) -->
+    <section class="carousel" id="carousel">
+      <div class="carousel-slide active" data-direction="right">
+        <img src="./carousel-1.jpg" alt="Image 1" />
+        <div class="carousel-caption hero-animate-right">
+          <h4>IMPORTANCE LIFE</h4>
+          <h1>Always Want Safe Water<br />For Healthy Life</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <div class="carousel-btns">
+            <button class="carousel-btn primary">Order Now</button>
+            <button class="carousel-btn secondary">Free Estimate</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide" data-direction="left">
+        <img src="./carousel-2.jpg" alt="Image 2" />
+        <div class="carousel-caption hero-animate-left">
+          <h4>IMPORTANCE LIFE</h4>
+          <h1>Always Want Safe Water<br />For Healthy Life</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <div class="carousel-btns">
+            <button class="carousel-btn primary">Order Now</button>
+            <button class="carousel-btn secondary">Free Estimate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Arrows -->
+      <div class="carousel-control prev" id="prevSlide">
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div class="carousel-control next" id="nextSlide">
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="header size">
+          <h4>Testimonials</h4>
+          <h1>Our Clients Reviews</h1>
+        </div>
+
+        <div class="testimonial-carousel">
+          <div class="testimonial-controls">
+            <button
+              class="testimonial-btn"
+              id="prevTestimonial"
+              aria-label="Previous"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="testimonial-btn"
+              id="nextTestimonial"
+              aria-label="Next"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Slides group -->
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slides are injected by JS -->
+          </div>
+          <div class="testimonial-indicators" id="testimonialIndicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-2-cols">
+          <!-- Grid Part 2  -->
+          <div>
+            <form class="footer-signup">
+              <input type="text" placeholder="Email address to Subscribe" />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Grid Part 2  -->
+          <div class="footer-socials flex row">
+            <a
+              class="icon blue hover"
+              href="https://www.facebook.com/injineermaxameddaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.x.com/injineerdaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.instagram.com/injineer.daacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.linkedin.com/in/injineerdaacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on linkedin"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <br />
+        <div class="grid-4-cols add-gap">
+          <div class="footer-col">
+            <div>
+              <h3>
+                <i class="fas fa-hand-holding-water txt-primary"></i>
+                <span class="sub-header txt-white">Acuas</span>
+              </h3>
+            </div>
+
+            <div>
+              <p>
+                Dolor amet sit justo amet elitr <br />
+                clita ipsum elitr est.Lorem <br />
+                ipsum dolor sit amet, <br />
+                consectetur adipiscing elit<br />
+                consectetur adipiscing elit.
+              </p>
+              <form class="footer-signup">
+                <input type="text" placeholder="Enter your email" />
+                <button type="submit" class="btn">SignUp</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-col free-6">
+            <h4 class="sub-header txt-white">About Us</h4>
+            <ul>
+              <li><a href="#">Why Choose Us</a></li>
+              <li><a href="#">Free Water Bottles</a></li>
+              <li><a href="#">Water Dispensers</a></li>
+              <li><a href="#">Bottled Water Coolers</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="sub-header txt-white">Business Hours</h4>
+            <p>
+              <span>Mon - Friday:</span><br /><b class="txt-white"
+                >09.00 am to 07.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Saturday:</span><br /><b class="txt-white"
+                >10.00 am to 05.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Vacation:</span><br /><b class="txt-white"
+                >All Sunday is our vacation</b
+              >
+            </p>
+          </div>
+          <div class="footer-col">
+            <div><h4 class="sub-header txt-white">Contact Info</h4></div>
+            <div>
+              <ul>
+                <li>
+                  <a>
+                    <i class="fa fa-map-marker-alt"></i> 123 Street, New York,
+                    USA
+                  </a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> info@example.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> info@example.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-phone"></i> +012 345 67890</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-print"></i> +012 345 67890</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="copyright-content">
+        <span>
+          <i class="fa fa-copyright"></i>
+          <a
+            href="https://wa.me/252615600765"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with Eng. Honest on WhatsApp"
+            >Eng. Honest</a
+          >
+          <span>& </span>
+          <a
+            href="https://wa.me/60187679327"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with Eng. Yuwazac on WhatsApp"
+          >
+            Eng. Yuwazac</a
+          >, All right reserved.
+        </span>
+        <span>
+          Designed By <a href="https://htmlcodex.com">HTML Codex</a> Distributed
+          By <a href="https://themewagon.com">ThemeWagon</a>
+        </span>
+      </div>
     </div>
-
-   
-</footer>
-<div class="container-fluid copyright p-4">
-    <div class="container">
-        <div class="row g-4 align-items-center">
-            <div class=" copyright-text col-md-6 text-center text-md-start mb-md-0">
-                <span class="text-body">
-                    <a href="#" class="border-bottem text-white">
-                        <i class="fas fa-copyright text-align me-2"></i>
-                        "Dugsiye challenge"
-                    </a>
-                    ", All right reserved."
-                </span>
-            </div>
-            <div class="col-md-6 text-center text-md-end text-body">
-                Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
+    <button
+      type="button"
+      class="back-to-top"
+      onclick="scrollToTop()"
+      aria-label="Back to top of page"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
 </html>
